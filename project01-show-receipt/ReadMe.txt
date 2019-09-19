@@ -2,8 +2,7 @@ Hello Dev
 
 Exercise:
 Create a simple app to show a receipt like this:
-![Reciept]
-(Rent-Receipt-Template.png)
+![Reciept](Rent-Receipt-Template.png)
 
 Notice:
 * Use nested compnents
