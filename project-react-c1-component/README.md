@@ -14,3 +14,4 @@ npx create-react-app john-app
 ```
 2. Create a component to show a receipt like this:
 
+![https://github.com/basir/learn-react/blob/master/project-react-c1-component/Rent-Receipt-Template.png?raw=true](https://github.com/basir/learn-react/blob/master/project-react-c1-component/Rent-Receipt-Template.png?raw=true)
