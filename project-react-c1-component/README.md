@@ -4,7 +4,7 @@
 In this project you need to know following topics:
 Hello World, Part II... THE COMPONENT Import React Import ReactDOM Create a Component Class Name a Component Class Component Class Instructions The Render Function Create a Component Instance Render A Component
 
-If you are not familier with them please read Learn HTML eBook from https://codingwithbasir.com/learn-react
+If you are not familier with them please read Learn React eBook from https://codingwithbasir.com/learn-react
 
 ## Project Definition
 Create a simple Rent Reciept
