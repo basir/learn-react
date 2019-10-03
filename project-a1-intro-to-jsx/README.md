@@ -1,4 +1,4 @@
-# Project HTML A1 Introduction
+# Project React A1 Introduction
 
 To code this project you need to know:
 Why React?
