@@ -16,11 +16,11 @@ Learn React by Basir JD Mentorship
 * JSX Recap
 ## ADVANCED JSX
 * class vs className
-* Self-Closing Tags
+* Self-closing Tags
 * JavaScript In Your JSX In Your JavaScript
 * Curly Braces in JSX
 * 20 Digits of Pi in JSX
-* * Variables in JSX
+* Variables in JSX
 * Variable Attributes in JSX
 * Event Listeners in JSX
 * JSX Conditionals: If Statements That Don't Work
@@ -28,9 +28,7 @@ Learn React by Basir JD Mentorship
 * JSX Conditionals: The Ternary Operator
 * JSX Conditionals: &&
 * .map in JSX
-Keys
-React.createElement
-JSX Recap
+* Keys
 ## YOUR FIRST REACT COMPONENT
 * Hello World, Part II... THE COMPONENT
 * Import React
@@ -115,13 +113,13 @@ JSX Recap
 * Inline Styles
 * Make A Style Object Variable
 * Style Name Syntax
-Style Value Syntax
-Share Styles Across Multiple Components
-PROPTYPES
-Apply PropTypes
-Add Properties to PropTypes
-PropTypes in Stateless Functional Components
-Separating presentational components from display components
-Applying Pattern
-STATELESS FUNCTIONAL COMPONENTS
-Adding Props
+* Style Value Syntax
+* Share Styles Across Multiple Components
+* PROPTYPES
+* Apply PropTypes
+* Add Properties to PropTypes
+* PropTypes in Stateless Functional Components
+* Separating presentational components from display components
+* Applying Pattern
+* STATELESS FUNCTIONAL COMPONENTS
+* Adding Props
