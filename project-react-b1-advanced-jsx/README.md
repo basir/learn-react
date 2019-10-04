@@ -1,8 +1,6 @@
 # Project React B1 Introduction
 
 To code this project you need to know:
-Why React?
-
 class vs className
 , Self-closing Tags
 , JavaScript In Your JSX In Your JavaScript
@@ -52,4 +50,3 @@ If you are not familier with them download Learn React eBook from (https://codin
 ## How to deliver this project
 
 Check this link: https://codingwithbasir.com/how-to-deliver-projects/
-
