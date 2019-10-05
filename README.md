@@ -1,6 +1,10 @@
 # Learn React
 
-Learn React by Basir JD Mentorship
+- Download Free eBook: https://codingwithbasir.com/download
+- Fork and Clone This repository
+- Code Project A1
+- Send a Pull Request
+- Let me know to review your code: [basir.jafaradeh@gmail.com](mailto:basir.jafaradeh@gmail.com)
 
 ## INTRO TO JSX
 
@@ -17,7 +21,6 @@ Learn React by Basir JD Mentorship
 - Rendering JSX
 - Passing a Variable to ReactDOM.render()
 - The Virtual DOM
-- JSX Recap
 
 ## ADVANCED JSX
 
@@ -83,7 +86,6 @@ Learn React by Basir JD Mentorship
 - handleEvent, onEvent, and this.props.onEvent
 - this.props.children
 - defaultProps
-- this.props Recap
 
 ## THIS.STATE
 
@@ -93,7 +95,6 @@ Learn React by Basir JD Mentorship
 - Update state with this.setState
 - Call this.setState from Another Function
 - this.setState Automatically Calls render
-- Components Interacting Recap
 
 ## ADVANCED STATE
 
@@ -108,7 +109,6 @@ Learn React by Basir JD Mentorship
 - One Sibling to Display, Another to Change
 - Pass the Right props to the Right Siblings
 - Display Information in a Sibling Component
-- Review
 
 ## REACT FORMS
 
@@ -132,7 +132,6 @@ Learn React by Basir JD Mentorship
 - componentWillUpdate
 - componentDidUpdate
 - componentWillUnmount
-- Lifecycle Methods Recap
 
 ## ADVANCED TOPICS
 
