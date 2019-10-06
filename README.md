@@ -1,10 +1,10 @@
 # Learn React
 
-- Download Free eBook: https://codingwithbasir.com/download
-- Fork and Clone This repository
-- Code Project A1
-- Send a Pull Request
-- Let me know to review your code: [basir.jafaradeh@gmail.com](mailto:basir.jafaradeh@gmail.com)
+1. Download Free eBook: https://codingwithbasir.com/download
+2. Fork and Clone This repository
+3. Code Project A1
+4. Send a Pull Request
+5. Let me know to review your code: [basir.jafaradeh@gmail.com](mailto:basir.jafaradeh@gmail.com)
 
 ## INTRO TO JSX
 
