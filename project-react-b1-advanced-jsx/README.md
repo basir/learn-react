@@ -40,12 +40,41 @@ If you are not familier with them download Learn React eBook from (https://codin
 ```
 
 2. Open Chrome side by side of VS Code and open the html file into it. Also Open Developer Tools in Chrome to see warnings and errors.
-3. In `script` section, define a variable named `visitCard` and set it to `<h1> Your-Name Visit Card </h1>`
-4. Render `visitCard` by adding this code `ReactDOM.render(visitCard, document.getElementById("root"));`
-5. Edit `visitCard` declaration and surround `h1` by a `div`.
-6. Next to h1 add a paragraph and enter some words about yourself.
-7. Next to p tag and a link to your tweeter account to open it in new window.
-8. Next to a tag Add an image from yourself. If you do not have an image url on the web use `https://i.pravatar.cc/300`
+
+3. In `script` tag, define a variable named `telephoneBill` and create a jsx element as follow:
+
+4. Create a div and put a h1 tag inside it and set it to `My Telephone Bill`
+
+5. Create a div next to h1 and set its css class to `header`
+
+6. Define a variable named `accountName` out side of jsx and set it to your name.
+
+7. Inside header div create 2 div side by side. I left div put a fake address and in right one put Bill Date and account Name.
+   Note: For Bill Date use `Date().now` method with Curly Braces in JSX. For account Name use the variable `accountName`.
+
+8. Create another div next to header div and set its className to `content`
+
+9. Define a variable `typesOfCharges` before `telephoneBill` as follow:
+
+```javascript
+const typesOfCharges = [
+  { name: "Monthly Service", fee: 24 },
+  { fee: "Tax", tax: 2.4 },
+  { name: `CBT Service`, fee: 1.2 }
+];
+```
+
+10. Create a table inside `content` div and show above array as 2 column table. Use `.map` to convert array to jsx elements. Set `key` attribute to fee `name` field.
+
+11. Add a div and set className to `footer`. Calculte total fee from `typesOfCharges` and check if it is greater the 0. If it is show it as `Total: $X` else show `Your bill is free this month`.
+
+12. Add an image to the end of this bill. Define variable `stampUrl` before `telephoneBill` and set it to `https://image.freepik.com/free-vector/paid-stamp_1017-8234.jpg`. Set image url to `stampUrl` and set width and height to 80px.
+
+13. Add an event listener on the image to show a alert message with user click on it and say "Yes. It is paid."
+
+14. Render `telephoneBill` by adding this code `ReactDOM.render(telephoneBill, document.getElementById("root"));` as last command.
+
+15. Check result in chrome.
 
 ## How to deliver this project
 
