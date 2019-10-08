@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-  </head>
-  <body>
-    <div id="root"></div>
-		<script type="text/babel">
-		
+
+<head>
+  <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+
       const accountName = "Bruno";
       const typesOfCharges = [
         { name: "Monthly Service", fee: 24 },
-        { fee: "Tax", tax: 2.4 },
-        { name: `CBT Service`, fee: 1.2 }
+        { name: "Tax", fee: 2.4 },
+        { name: "CBT Service", fee: 1.2 }
       ];
+      const cdate = (Date.now()).toString();
 
       const telephoneBill = (
         <div>
@@ -22,14 +25,27 @@
           <div className="header">
             <div>1813 Maryland Avenue</div>
             <div>
-              Bill Date: {Date().now} Account Name: {accountName}
+              Bill Date: {cdate} Account Name: {accountName}
             </div>
           </div>
 					<div className="content">
-						
+            <table>
+              <thead>
+                <tr>
+                  <td>Name</td>
+                  <td>Fee</td>
+                </tr>
+              </thead>
+              <tbody>
+                {typesOfCharges.map(row=><tr><td>{row.name}</td><td>{row.fee}</td></tr>)}
+              </tbody>
+            </table>
 					</div>
         </div>
       );
+
+      ReactDOM.render(telephoneBill, document.getElementById("root"));
     </script>
-  </body>
+</body>
+
 </html>
