@@ -12,13 +12,21 @@
   <script type="text/babel">
 
       const accountName = "Bruno";
+      const cdate = (Date.now()).toString();
+
       const typesOfCharges = [
         { name: "Monthly Service", fee: 24 },
         { name: "Tax", fee: 2.4 },
         { name: "CBT Service", fee: 1.2 }
       ];
-      const cdate = (Date.now()).toString();
-
+      function amount(item){
+        return item.fee;
+      }
+      function sum(prev, next){
+        return prev + next;
+      }
+      const totalBill = typesOfCharges.map(amount).reduce(sum);
+      
       const telephoneBill = (
         <div>
           <h1>My Telephone Bill</h1>
@@ -37,10 +45,13 @@
                 </tr>
               </thead>
               <tbody>
-                {typesOfCharges.map(row=><tr><td>{row.name}</td><td>{row.fee}</td></tr>)}
+                {typesOfCharges.map(row=><tr key={row.uniqueId}><td>{row.name}</td><td>{row.fee}</td></tr>)}
               </tbody>
             </table>
 					</div>
+          <div className="footer">
+            {totalBill > 0 ? 'Total: ' + totalBill.toFixed(2) : 'Your bill is free this month'}
+          </div>
         </div>
       );
 
