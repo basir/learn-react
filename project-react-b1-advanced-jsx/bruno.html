@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      const accountName = "Bruno";
+      const cdate = Date.now().toString();
+
+      const typesOfCharges = [
+        { name: "Monthly Service", fee: 24 },
+        { name: "Tax", fee: 2.4 },
+        { name: "CBT Service", fee: 1.2 }
+      ];
+      function amount(item) {
+        return item.fee;
+      }
+      function sum(prev, next) {
+        return prev + next;
+      }
+      function teste() {
+        alert("Yes. It is paid.");
+      }
+      const totalBill = typesOfCharges.map(amount).reduce(sum);
+      const stampUrl =
+        "https://image.freepik.com/free-vector/paid-stamp_1017-8234.jpg";
+
+      const telephoneBill = (
+        <div>
+          <h1>My Telephone Bill</h1>
+          <div className="header">
+            <div>1813 Maryland Avenue</div>
+            <div>
+              Bill Date: {cdate} Account Name: {accountName}
+            </div>
+          </div>
+          <div className="content">
+            <table>
+              <thead>
+                <tr>
+                  <td>Name</td>
+                  <td>Fee</td>
+                </tr>
+              </thead>
+              <tbody>
+                {typesOfCharges.map(row => (
+                  <tr key={row.name}>
+                    <td>{row.name}</td>
+                    <td>{row.fee}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <div className="footer">
+            {totalBill > 0
+              ? "Total: " + totalBill.toFixed(2)
+              : "Your bill is free this month"}
+          </div>
+          <img src={stampUrl} width="80px" height="80px" onClick={teste} />
+        </div>
+      );
+
+      ReactDOM.render(telephoneBill, document.getElementById("root"));
+    </script>
+  </body>
+</html>
