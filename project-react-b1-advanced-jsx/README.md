@@ -59,14 +59,14 @@ If you are not familier with them download Learn React eBook from (https://codin
 ```javascript
 const typesOfCharges = [
   { name: "Monthly Service", fee: 24 },
-  { fee: "Tax", tax: 2.4 },
+  { name: "Tax", fee: 2.4 },
   { name: `CBT Service`, fee: 1.2 }
 ];
 ```
 
 10. Create a table inside `content` div and show above array as 2 column table. Use `.map` to convert array to jsx elements. Set `key` attribute to fee `name` field.
 
-11. Add a div and set className to `footer`. Calculte total fee from `typesOfCharges` and check if it is greater the 0. If it is show it as `Total: $X` else show `Your bill is free this month`.
+11. Add a div and set className to `footer`. Calculate total fee from `typesOfCharges` and check if it is greater the 0. If it is show it as `Total: $X` else show `Your bill is free this month`.
 
 12. Add an image to the end of this bill. Define variable `stampUrl` before `telephoneBill` and set it to `https://image.freepik.com/free-vector/paid-stamp_1017-8234.jpg`. Set image url to `stampUrl` and set width and height to 80px.
 
