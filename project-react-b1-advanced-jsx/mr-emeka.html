@@ -1,74 +1,97 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+      #root {
+        max-width: 500px;
+        margin: 0 auto;
+      }
+      .header {
+        border: 1px solid gray;
+        padding: 10px;
+      }
+      .content {
+        border: 1px solid gray;
+        padding: 10px;
+      }
+      .footer {
+        border: 1px solid gray;
+        padding: 10px;
+      }
+      table {
+        width: 100%;
+      }
+    </style>
+  </head>
 
-<head>
-  <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
-  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-</head>
-
-<body>
-  <div id="root"></div>
-  <script type="text/babel">
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
       // your code here
 
-      const typesOfCharges =[
-      { name: "Monthly Service", fee: 24 },
-      { name: "Tax", fee: 2.4 },
-      { name: `CBT Service`, fee: 1.2 }
-      ]
-      var accountName = 'Ukpai Chukwuemeka';
+      const typesOfCharges = [
+        { name: "Monthly Service", fee: 24 },
+        { name: "Tax", fee: 2.4 },
+        { name: `CBT Service`, fee: 1.2 }
+      ];
+      var accountName = "Ukpai Chukwuemeka";
 
-      const totalFee= typesOfCharges.map((item)=>{return item.fee}).reduce((amount,item)=>{
-        return amount + item
-      });
+      const totalFee = typesOfCharges
+        .map(item => {
+          return item.fee;
+        })
+        .reduce((amount, item) => {
+          return amount + item;
+        });
 
-      const stampUrl ='https://image.freepik.com/free-vector/paid-stamp_1017-8234.jpg';
+      const stampUrl =
+        "https://image.freepik.com/free-vector/paid-stamp_1017-8234.jpg";
 
-      const clicked = ()=>{
+      const clicked = () => {
         alert("Yes. It is paid.");
-      }
-      const  telephoneBill = (
+      };
+      const telephoneBill = (
         <div>
           <h1>My Telephone Bill</h1>
-          <div className='header'>
-            <div>7,Western Avenue Ikoyi Lagos.</div>
-            <div>Bill Date:{Date.now()}
-            Account Name:{accountName}</div>
+          <div className="header">
+            <div>Address: 7,Western Avenue Ikoyi Lagos.</div>
+            <div>
+              Bill Date:{new Date().toISOString().slice(0, 10)}
+              <br />
+              Account Name:{accountName}
+            </div>
           </div>
-          <div className='content'>
+          <div className="content">
             <table>
-             <thead>
-               <tr>
-               <td>NAME</td>
-               <td>FEE</td>
-               </tr>
-             </thead>
-             <tbody>
-                {
-                  typesOfCharges.map(item=>{
-                    <tr key={item.name}>
-                     <td>{item.name}</td>
-                     <td>{item.fee}</td>
-                    </tr>
-                  })
-                }
-
-             </tbody>
+              <thead>
+                <tr>
+                  <td>NAME</td>
+                  <td>FEE</td>
+                </tr>
+              </thead>
+              <tbody>
+                {typesOfCharges.map(item => (
+                  <tr key={item.name}>
+                    <td>{item.name}</td>
+                    <td>{item.fee}</td>
+                  </tr>
+                ))}
+              </tbody>
             </table>
           </div>
-          <div className='footer'>
-         {totalFee > 0
-           ? `Total : ${totalFee}`
-           : `Your Bill is free this month`
-         }
+          <div className="footer">
+            {totalFee > 0
+              ? `Total : ${Math.round(totalFee * 100) / 100}`
+              : `Your Bill is free this month`}
+          </div>
+          <img src={stampUrl} width="80px" height="80px" onClick={clicked} />
         </div>
-         <img src={stampUrl} width='80px' height='80px' onClick={clicked} />
-      </div>
       );
-     
+
       ReactDOM.render(telephoneBill, document.getElementById("root"));
     </script>
-</body>
-
+  </body>
 </html>

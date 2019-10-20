@@ -49,8 +49,8 @@ If you are not familier with them download Learn React eBook from (https://codin
 
 6. Define a variable named `accountName` out side of jsx and set it to your name.
 
-7. Inside header div create 2 div side by side. I left div put a fake address and in right one put Bill Date and account Name.
-   Note: For Bill Date use `Date().now` method with Curly Braces in JSX. For account Name use the variable `accountName`.
+7. Inside header div create 2 paragraph. I left first paragraph put a fake address and in second one put Bill Date and account Name. account Name should be in new line.
+   Note: For Bill Date use `new Date().toISOString().slice(0, 10)` method with Curly Braces in JSX. For account Name use the variable `accountName`.
 
 8. Create another div next to header div and set its className to `content`
 
@@ -67,12 +67,39 @@ const typesOfCharges = [
 10. Create a table inside `content` div and show above array as 2 column table. Use `.map` to convert array to jsx elements. Set `key` attribute to fee `name` field.
 
 11. Add a div and set className to `footer`. Calculate total fee from `typesOfCharges` and check if it is greater the 0. If it is show it as `Total: $X` else show `Your bill is free this month`.
+    Note: Round the number to 2 decimal points. Use `Math.round`
 
 12. Add an image to the end of this bill. Define variable `stampUrl` before `telephoneBill` and set it to `https://image.freepik.com/free-vector/paid-stamp_1017-8234.jpg`. Set image url to `stampUrl` and set width and height to 80px.
 
 13. Add an event listener on the image to show a alert message with user click on it and say "Yes. It is paid."
 
 14. Render `telephoneBill` by adding this code `ReactDOM.render(telephoneBill, document.getElementById("root"));` as last command.
+
+15. Add style to the component in the head tag like this:
+
+```html
+<style>
+  #root {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .header {
+    border: 1px solid gray;
+    padding: 10px;
+  }
+  .content {
+    border: 1px solid gray;
+    padding: 10px;
+  }
+  .footer {
+    border: 1px solid gray;
+    padding: 10px;
+  }
+  table {
+    width: 100%;
+  }
+</style>
+```
 
 15. Check result in chrome.
 
