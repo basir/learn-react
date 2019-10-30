@@ -13,7 +13,7 @@ Why React?
 , Passing a Variable to ReactDOM.render()
 , The Virtual DOM
 
-If you are not familier with them download Learn React eBook from (https://codingwithbasir.com/learn-react)
+If you are not familiar with them download Learn React eBook from (https://codingwithbasir.com/learn-react)
 
 ## Project Title: Visit Card
 
@@ -42,7 +42,7 @@ If you are not familier with them download Learn React eBook from (https://codin
 5. Edit `visitCard` declaration and surround `h1` by a `div`.
 6. Next to h1 add a paragraph and enter some words about yourself.
 7. Next to p tag and a link to your twitter account to open it in new window.
-8. Next to a tag Add an image from yourself. If you do not have an image url on the web use `https://i.pravatar.cc/300`
+8. Next to a tag add an image from yourself. If you do not have an image url on the web use `https://i.pravatar.cc/300`
 
 ## How to deliver this project
 

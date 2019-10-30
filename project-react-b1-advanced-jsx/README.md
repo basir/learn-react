@@ -16,7 +16,7 @@ class vs className
 , .map in JSX
 , Keys
 
-If you are not familier with them download Learn React eBook from (https://codingwithbasir.com/learn-react)
+If you are not familiar with them download Learn React eBook from (https://codingwithbasir.com/learn-react)
 
 ## Project Title: Telephone Bill
 

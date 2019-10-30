@@ -30,7 +30,7 @@ If you are not familier with them please read Learn React eBook from https://cod
 
 4. Create a React component in `PostalCard.js` .
 
-5) Create 2 divs side by side in the render method of this component and surronf them into and outr div.
+5) Create 2 divs side by side in the render method of this component and surround them into and outer div.
 
 6. In left div put a messge into a paragraph.
 
@@ -38,4 +38,4 @@ If you are not familier with them please read Learn React eBook from https://cod
 
 8. Edit `app.js` to import `PostalCard` and use it in the render method of App component.
 
-9. Run npm start to check result in Chrom.
+9. Run npm start to check result in Chrome.
