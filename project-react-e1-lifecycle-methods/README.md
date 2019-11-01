@@ -15,7 +15,7 @@ What's a Lifecycle Method?
 
 ## Project Title: ...
 
-1. It was supposed that you are in VS Code, added this repository folder to workspace and opened termial in `learn-react` folder.
+1. It was supposed that you are in VS Code, added this repository folder to workspace and opened terminal in `learn-react` folder.
 
 2. Change directory to this project folder and create react app:
 
@@ -28,7 +28,7 @@ Note: Replace `your-name` with your first name to make it unique.
 
 3. Delete all files in `public` folder but keep `index.html`. Edit `index.html` to remove reference to deleted files.
 
-Your index.js would be like this:
+Your index.html would be like this:
 
 ```html
 <!DOCTYPE html>
