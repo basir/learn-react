@@ -22,9 +22,9 @@ Topics: State
 ,Update an Input's Value
 Controlled vs Uncontrolled
 
-## Project Title: ...
+## Project Title: Credit Card Form
 
-1. It was supposed that you are in VS Code, added this repository folder to workspace and opened terminal in `learn-react` folder.
+1. It is supposed that you are in VS Code, added this repository folder to workspace and opened terminal in `learn-react` folder.
 
 2. Change directory to this project folder and create react app:
 
@@ -77,4 +77,39 @@ export default class App extends React.Component {
 }
 ```
 
-5. ...
+5. Create component `CreditCardForm` in a file named `Gallery.js`.
+
+6. Create component `CardNumberInput` in a file named `CardNumberInput.js`.
+
+7. Create component `OwnerInput` in a file named `OwnerInput.js`.
+
+8. Create component `CvvInput` in a file named `CvvInput.js`.
+
+9. Create component `ExpirationDateInput` in a file named `ExpirationDateInput.js`.
+
+10. Create an state in `CreditCardForm` component inside constructor like this:
+
+```javascript
+this.state = {
+  cardNumber: "",
+  owner: "",
+  cvv: "",
+  expirationMonth: "",
+  expirationYear: "",
+  isValid: false
+};
+```
+
+11. Put an text input in `CardNumberInput` to get `cardNumber`. Save input value to `cardNumber` state of `CreditCardForm`. Set max length to 16. If card number is not 16 digits make the input border red to show error.
+
+12. Put an text input in `OwnerInput` to get `owner`. Save input value to `owner` state of `CreditCardForm`. If card number is empty make the input border red to show error.
+
+13. Put an number input in `CvvInput` to get `cvv`. Save input value to `cvv` state of `CreditCardForm`. If card number is not 3 or 4 digits make the input border red to show error.
+
+14. Put a dropdown input in get month and a number input to get year in `ExpirationDateInput`. If month is not selected make the border red. if year is not 4 digits and less than 2019 make border green. Save dropdown input value to `expirationMonth` state and number input value to `expirationYear` of `CreditCardForm`.
+
+15. Put a Sumbit button at the end of `CreditCardForm`. If all data are valid make it enabled, else set it disabled. When user click on it alert card info.
+
+16. Add `CreditCardForm` to `App` component.
+
+17. Run `npm start` and Check result in the browser.

@@ -25,7 +25,7 @@ Topics: Hello world Component
 
 ## Project Title: Postal Card
 
-1. It was supposed that you are in VS Code, added this repository folder to workspace and opened terminal in `learn-react` folder.
+1. It is supposed that you are in VS Code, added this repository folder to workspace and opened terminal in `learn-react` folder.
 
 2. Change directory to this project folder and create react app:
 
