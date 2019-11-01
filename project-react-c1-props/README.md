@@ -14,9 +14,9 @@ this.props
 ,this.props.children
 ,defaultProps
 
-## Project Title: ...
+## Project Title: Image Gallery
 
-1. It was supposed that you are in VS Code, added this repository folder to workspace and opened terminal in `learn-react` folder.
+1. It is supposed that you are in VS Code, added this repository folder to workspace and opened terminal in `learn-react` folder.
 
 2. Change directory to this project folder and create react app:
 
@@ -69,4 +69,47 @@ export default class App extends React.Component {
 }
 ```
 
-5. ...
+5. Create component `Gallery` in a file named `Gallery.js`.
+
+6. Create component `GalleryHeader` in a file named `GalleryHeader.js`.
+
+7. Create component `GalleryImage` in a file named `Gallery.js`.
+
+8. Create component `GalleryFooter` in a file named `GalleryFooter.js`.
+
+9. Create an object in `Gallery` component inside constructor like this:
+
+```javascript
+this.galleryInfo = {
+  title: `Friends Photo`,
+  description: `This gallery shows the photo of my friends`,
+  images: [
+    {
+      name: `Sara`,
+      photo: `https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/93.jpg`
+    },
+    {
+      name: `John`,
+      photo: `https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/46.jpg`
+    },
+    {
+      name: `Joe`,
+      photo: `https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/59.jpg`
+    }
+  ]
+};
+```
+
+10. Compose `Gallery` with a `GalleryHeader`, Multiple `GalleryImage`s and `GalleryFooter`.
+
+11. `GalleryHeader` show title of the gallery in h1 element. Send `this.galleryInfo.title` as props to this component.
+
+12. Use map to convert `this.galleryInfo.images` to `GalleryImage`. Send each item of the array as`image` props to `GalleryImage` component.
+
+13. `GalleryFooter` show description of the gallery in p element. Send `this.galleryInfo.description` as props to this component.
+
+14. Show number of image as new p element next to above paragraph in `GalleryFooter`. It should be like `This gallery has x images.`
+
+15. Add `Gallery` to `App` component.
+
+16. Run `npm start` and Check result in the browser.
