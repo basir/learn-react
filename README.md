@@ -1,4 +1,4 @@
-# Learn HTML
+# Learn React
 
 1. [Download free eBook](https://codingwithbasir.com/download)
 2. Code following projects
@@ -9,7 +9,7 @@
 ## Projects
 
 - [Project A1 JSX ](project-react-a1-jsx)
--
+
 - [Project A2 JSX ](project-react-a2-jsx)
 
 - [Project B1 COMPONENT ](project-react-b1-component)
@@ -19,7 +19,7 @@
 - [Project D1 STATE](project-react-d1-state)
 
 - [Project E1 LIFECYCLE METHODS](project-react-e1-lifecycle-methods)
--
+
 - [Project F1 ADVANCED TOPICS](project-react-f1-advanced-topics)
 
 ## Want to get reviewed?
