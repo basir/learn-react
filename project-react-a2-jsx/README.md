@@ -1,6 +1,6 @@
 # Project React B1 Introduction
 
-To code this project you need to know:
+Topics:
 class vs className
 , Self-closing Tags
 , JavaScript In Your JSX In Your JavaScript
@@ -15,8 +15,6 @@ class vs className
 , JSX Conditionals: &&
 , .map in JSX
 , Keys
-
-If you are not familier with them download Learn React eBook from (https://codingwithbasir.com/learn-react)
 
 ## Project Title: Telephone Bill
 
@@ -103,6 +101,10 @@ const typesOfCharges = [
 
 15. Check result in chrome.
 
-## How to deliver this project
+## Want to get reviewed?
 
-Check this link: https://codingwithbasir.com/how-to-deliver-projects/
+Send Pull Request. Check how to deliver your code: https://codingwithbasir.com/how-to-deliver-projects/
+
+## Need help?
+
+Download Free eBook https://codingwithbasir.com/download

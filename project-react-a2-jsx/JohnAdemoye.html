@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      // your code here
+
+      const accountName = 'John Ademoye';
+      const typesOfCharges = [
+        { name: 'Monthly Service', fee: 24 },
+        { name: 'Tax', fee: 2.4 },
+        { name: 'CBT Service', fee: 1.2 }
+      ];
+
+      const fee = typesOfCharges.map(item => item.fee).reduce((a, b) => a + b);
+      const totalFee = parseInt(fee.toFixed(2));
+      console.log(totalFee);
+
+      const stampUrl = `https://image.freepik.com/free-vector/paid-stamp_1017-8234.jpg`;
+      const telephoneBill = (
+        <div>
+          <h1>My Telephone Bill</h1>
+          <div className={'header'}>
+            <p>This is my address</p>
+            <p>
+              Bill Date: {new Date().toISOString().slice(0, 10)} <br />
+              Account name: {accountName}
+            </p>
+          </div>
+          <div className={'content'}>
+            <table>
+              <thead>
+                <tr>
+                  <td>name</td>
+                  <td>fee</td>
+                </tr>
+              </thead>
+              <tbody>
+                {typesOfCharges.map(charge => (
+                  <tr key={charge.name}>
+                    <td>{charge.name}</td>
+                    <td>{charge.fee}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <div className={'footer'}>
+            {totalFee > 0
+              ? `Total: ${totalFee}`
+              : `Your bill is free this month`}
+            <img
+              src={stampUrl}
+              alt="Img"
+              width="80px"
+              height="80px"
+              onClick={() => alert("Yes, It's paid")}
+            ></img>
+          </div>
+        </div>
+      );
+
+      ReactDOM.render(telephoneBill, document.getElementById('root'));
+    </script>
+  </body>
+</html>
