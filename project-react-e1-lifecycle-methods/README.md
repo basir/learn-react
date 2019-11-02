@@ -26,7 +26,15 @@ What's a Lifecycle Method?
 
 Note: Replace `your-name` with your first name to make it unique.
 
-3. Delete all files in `public` folder but keep `index.html`. Edit `index.html` to remove reference to deleted files.
+3. Delete `README.md` file.
+
+4. Add this line to the end of `.gitignore` to prevent pushing package-lock.json to github.
+
+```
+package-lock.json
+```
+
+5. Delete all files in `public` folder but keep `index.html`. Edit `index.html` to remove reference to deleted files.
 
 Your index.html would be like this:
 
@@ -45,7 +53,7 @@ Your index.html would be like this:
 </html>
 ```
 
-4. Delete all files in `src` folder but keep `index.js`, `App.js`. Edit these two files remove references to deleted files.
+6. Delete all files in `src` folder but keep `index.js`, `App.js`. Edit these two files remove references to deleted files.
 
 Your index.js would be like this:
 
@@ -68,4 +76,4 @@ export default class App extends React.Component {
 }
 ```
 
-5. ...
+7. ...
