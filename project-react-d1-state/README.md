@@ -54,7 +54,15 @@ Your index.html would be like this:
 </html>
 ```
 
-4. Delete all files in `src` folder but keep `index.js`, `App.js`. Edit these two files remove references to deleted files.
+4. Delete `README.md` file.
+
+5. Add this line to the end of `.gitignore` to prevent pushing package-lock.json to github.
+
+```
+package-lock.json
+```
+
+6. Delete all files in `src` folder but keep `index.js`, `App.js`. Edit these two files remove references to deleted files.
 
 Your index.js would be like this:
 
@@ -77,17 +85,17 @@ export default class App extends React.Component {
 }
 ```
 
-5. Create component `CreditCardForm` in a file named `Gallery.js`.
+7. Create component `CreditCardForm` in a file named `Gallery.js`.
 
-6. Create component `CardNumberInput` in a file named `CardNumberInput.js`.
+8. Create component `CardNumberInput` in a file named `CardNumberInput.js`.
 
-7. Create component `OwnerInput` in a file named `OwnerInput.js`.
+9. Create component `OwnerInput` in a file named `OwnerInput.js`.
 
-8. Create component `CvvInput` in a file named `CvvInput.js`.
+10. Create component `CvvInput` in a file named `CvvInput.js`.
 
-9. Create component `ExpirationDateInput` in a file named `ExpirationDateInput.js`.
+11. Create component `ExpirationDateInput` in a file named `ExpirationDateInput.js`.
 
-10. Create an state in `CreditCardForm` component inside constructor like this:
+12. Create an state in `CreditCardForm` component inside constructor like this:
 
 ```javascript
 this.state = {
@@ -100,16 +108,16 @@ this.state = {
 };
 ```
 
-11. Put an text input in `CardNumberInput` to get `cardNumber`. Save input value to `cardNumber` state of `CreditCardForm`. Set max length to 16. If card number is not 16 digits make the input border red to show error.
+13. Put an text input in `CardNumberInput` to get `cardNumber`. Save input value to `cardNumber` state of `CreditCardForm`. Set max length to 16. If card number is not 16 digits make the input border red to show error.
 
-12. Put an text input in `OwnerInput` to get `owner`. Save input value to `owner` state of `CreditCardForm`. If card number is empty make the input border red to show error.
+14. Put an text input in `OwnerInput` to get `owner`. Save input value to `owner` state of `CreditCardForm`. If card number is empty make the input border red to show error.
 
-13. Put an number input in `CvvInput` to get `cvv`. Save input value to `cvv` state of `CreditCardForm`. If card number is not 3 or 4 digits make the input border red to show error.
+15. Put an number input in `CvvInput` to get `cvv`. Save input value to `cvv` state of `CreditCardForm`. If card number is not 3 or 4 digits make the input border red to show error.
 
-14. Put a dropdown input in get month and a number input to get year in `ExpirationDateInput`. If month is not selected make the border red. if year is not 4 digits and less than 2019 make border green. Save dropdown input value to `expirationMonth` state and number input value to `expirationYear` of `CreditCardForm`.
+16. Put a dropdown input in get month and a number input to get year in `ExpirationDateInput`. If month is not selected make the border red. if year is not 4 digits and less than 2019 make border green. Save dropdown input value to `expirationMonth` state and number input value to `expirationYear` of `CreditCardForm`.
 
-15. Put a Sumbit button at the end of `CreditCardForm`. If all data are valid make it enabled, else set it disabled. When user click on it alert card info.
+17. Put a Sumbit button at the end of `CreditCardForm`. If all data are valid make it enabled, else set it disabled. When user click on it alert card info.
 
-16. Add `CreditCardForm` to `App` component.
+18. Add `CreditCardForm` to `App` component.
 
-17. Run `npm start` and Check result in the browser.
+19. Run `npm start` and Check result in the browser.

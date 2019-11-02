@@ -1,18 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import GalleryHeader from './GalleryHeader';
-import GalleryFooter from './GalleryFooter';
-
-function GalleryImage(props) {
-  const image = props;
-  console.log(image);
-
-  return (
-    <div>
-      <h1>Gallery Image</h1>
-    </div>
-  );
-}
+import GalleryHeader from "./GalleryHeader";
+import GalleryFooter from "./GalleryFooter";
+import GalleryImage from "./GalleryImage";
 
 class Gallery extends Component {
   constructor(props) {
