@@ -60,17 +60,17 @@ Your index.html would be like this:
 Your index.js would be like this:
 
 ```javascript
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./App";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById('root'));
 ```
 
 Your App.js would be like this:
 
 ```javascript
-import React from "react";
+import React from 'react';
 export default class App extends React.Component {
   render() {
     return <div>React App</div>;
@@ -80,7 +80,7 @@ export default class App extends React.Component {
 
 1. Create `PostalCard.js` in `src` folder Create `PostalCard` component there.
 
-2. Add 2 divs side by side in the render method of `PostalCard` and surrond them into a outer div.
+2. Add 2 divs side by side in the render method of `PostalCard` and surround them into a outer div.
 
 3. In left div create 2 paragraph and enter address info in first one and custom message in second one. Set its width to 200px.
 
