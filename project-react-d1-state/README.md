@@ -67,17 +67,17 @@ package-lock.json
 Your index.js would be like this:
 
 ```javascript
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./App";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById('root'));
 ```
 
 Your App.js would be like this:
 
 ```javascript
-import React from "react";
+import React from 'react';
 export default class App extends React.Component {
   render() {
     return <div>React App</div>;
@@ -95,20 +95,20 @@ export default class App extends React.Component {
 
 11. Create component `ExpirationDateInput` in a file named `ExpirationDateInput.js`.
 
-12. Create an state in `CreditCardForm` component inside constructor like this:
+12. Create a state in `CreditCardForm` component inside constructor like this:
 
 ```javascript
 this.state = {
-  cardNumber: "",
-  owner: "",
-  cvv: "",
-  expirationMonth: "",
-  expirationYear: "",
+  cardNumber: '',
+  owner: '',
+  cvv: '',
+  expirationMonth: '',
+  expirationYear: '',
   isValid: false
 };
 ```
 
-13. Put an text input in `CardNumberInput` to get `cardNumber`. Save input value to `cardNumber` state of `CreditCardForm`. Set max length to 16. If card number is not 16 digits make the input border red to show error.
+13. Put a text input in `CardNumberInput` to get `cardNumber`. Save input value to `cardNumber` state of `CreditCardForm`. Set max length to 16. If card number is not 16 digits make the input border red to show error.
 
 14. Put an text input in `OwnerInput` to get `owner`. Save input value to `owner` state of `CreditCardForm`. If card number is empty make the input border red to show error.
 
