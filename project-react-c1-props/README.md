@@ -27,7 +27,15 @@ this.props
 
 Note: Replace `your-name` with your first name to make it unique.
 
-3. Delete all files in `public` folder but keep `index.html`. Edit `index.html` to remove reference to deleted files.
+3. Delete `README.md` file.
+
+4. Add this line to the end of `.gitignore` to prevent pushing package-lock.json to github.
+
+```
+package-lock.json
+```
+
+5. Delete all files in `public` folder but keep `index.html`. Edit `index.html` to remove reference to deleted files.
 
 Your index.html would be like this:
 
@@ -46,7 +54,7 @@ Your index.html would be like this:
 </html>
 ```
 
-4. Delete all files in `src` folder but keep `index.js`, `App.js`. Edit these two files remove references to deleted files.
+6. Delete all files in `src` folder but keep `index.js`, `App.js`. Edit these two files remove references to deleted files.
 
 Your index.js would be like this:
 
@@ -69,15 +77,15 @@ export default class App extends React.Component {
 }
 ```
 
-5. Create component `Gallery` in a file named `Gallery.js`.
+7. Create component `Gallery` in a file named `Gallery.js`.
 
-6. Create component `GalleryHeader` in a file named `GalleryHeader.js`.
+8. Create component `GalleryHeader` in a file named `GalleryHeader.js`.
 
-7. Create component `GalleryImage` in a file named `Gallery.js`.
+9. Create component `GalleryImage` in a file named `GalleryImage.js`.
 
-8. Create component `GalleryFooter` in a file named `GalleryFooter.js`.
+10. Create component `GalleryFooter` in a file named `GalleryFooter.js`.
 
-9. Create an object in `Gallery` component inside constructor like this:
+11. Create an object in `Gallery` component inside constructor like this:
 
 ```javascript
 this.galleryInfo = {
@@ -100,16 +108,16 @@ this.galleryInfo = {
 };
 ```
 
-10. Compose `Gallery` with a `GalleryHeader`, Multiple `GalleryImage`s and `GalleryFooter`.
+12. Compose `Gallery` with a `GalleryHeader`, Multiple `GalleryImage`s and `GalleryFooter`.
 
-11. `GalleryHeader` show title of the gallery in h1 element. Send `this.galleryInfo.title` as props to this component.
+13. `GalleryHeader` show title of the gallery in h1 element. Send `this.galleryInfo.title` as props to this component.
 
-12. Use map to convert `this.galleryInfo.images` to `GalleryImage`. Send each item of the array as`image` props to `GalleryImage` component.
+14. Use map to convert `this.galleryInfo.images` to `GalleryImage`. Send each item of the array as`image` props to `GalleryImage` component and show images there with `img` tag.
 
-13. `GalleryFooter` show description of the gallery in p element. Send `this.galleryInfo.description` as props to this component.
+15. `GalleryFooter` show description of the gallery in p element. Send `this.galleryInfo.description` as props to this component.
 
-14. Show number of image as new p element next to above paragraph in `GalleryFooter`. It should be like `This gallery has x images.`
+16. Show number of image as new p element next to above paragraph in `GalleryFooter`. It should be like `This gallery has x images.`
 
-15. Add `Gallery` to `App` component.
+17. Add `Gallery` to `App` component.
 
-16. Run `npm start` and Check result in the browser.
+18. Run `npm start` and Check result in the browser.

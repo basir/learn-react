@@ -14,12 +14,13 @@ const randomUrl = imgArray[random];
 function PostalCard() {
   return (
     <div>
-      <div style={{ width: '200px' }}>
+      <div style={{ width: '200px', display: 'inline-block' }}>
         <p>Lagos, Nigeria</p>
         <p>Hello World</p>
       </div>
       <div
         style={{
+          display: 'inline-block',
           backgroundColor: hour > 7 && hour < 17 ? 'Cyan' : 'DarkBlue'
         }}
       >
