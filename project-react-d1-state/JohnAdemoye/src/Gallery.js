@@ -99,6 +99,7 @@ class CreditCardForm extends Component {
     console.log();
     if (this.checkFormData() === true) {
       alert(JSON.stringify(this.state, null, 4));
+      console.log(this.state);
     } else {
       alert('Error!!!');
     }
