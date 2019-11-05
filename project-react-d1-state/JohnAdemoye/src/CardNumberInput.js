@@ -1,15 +1,19 @@
 import React from 'react';
 
 function CardNumberInput(props) {
-  const { isValid, handleCardNumber } = props;
+  const {   isValid, handleCardNumber } = props;
   return (
     <div>
-      CardNumberInput:{' '}
-      <input
+      <label>
+      Card Number : 
+      <input 
         onChange={handleCardNumber}
         type="text"
-        style={{ borderColor: isValid ? 'red' : '', borderWidth: '2px' }}
-      />
+        maxLength="16"
+        style={{ borderColor: !isValid ? 'red' : '', borderWidth: '2px' }}
+      /> 
+      </label>
+      
     </div>
   );
 }

@@ -67,17 +67,17 @@ package-lock.json
 Your index.js would be like this:
 
 ```javascript
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById("root"));
 ```
 
 Your App.js would be like this:
 
 ```javascript
-import React from 'react';
+import React from "react";
 export default class App extends React.Component {
   render() {
     return <div>React App</div>;
@@ -85,7 +85,7 @@ export default class App extends React.Component {
 }
 ```
 
-7. Create component `CreditCardForm` in a file named `Gallery.js`.
+7. Create component `CreditCardForm` in a file named `CreditCardForm.js`.
 
 8. Create component `CardNumberInput` in a file named `CardNumberInput.js`.
 
@@ -99,12 +99,16 @@ export default class App extends React.Component {
 
 ```javascript
 this.state = {
-  cardNumber: '',
-  owner: '',
-  cvv: '',
-  expirationMonth: '',
-  expirationYear: '',
-  isValid: false
+  cardNumber: "",
+  owner: "",
+  cvv: "",
+  expirationMonth: "",
+  expirationYear: "",
+  isCardNumberValid: false,
+  isOwnerValid: false,
+  isCvvNumberValid: false,
+  isExpirationMonthValid: false,
+  isExpirationYearValid: false
 };
 ```
 

@@ -1,22 +1,16 @@
-import React from 'react';
+import React from "react";
 
-function ExpirationDateInput(props) {
-  const { handleYear, handleMonth, expirationMonth, expirationYear } = props;
-  let yearBool;
-  if (expirationYear < 2019 && expirationYear.length === 4) {
-    yearBool = true;
-  }
-
+function ExpirationMonthInput(props) {
+  const { handleMonth, isValid } = props;
   return (
     <div>
-      ExpirationDateInput
-      <div>
-        Month:
+      <label>
+        Expiration Month:
         <select
           onChange={handleMonth}
           style={{
-            borderColor: expirationMonth === '' ? 'red' : '',
-            borderWidth: '2px'
+            borderColor: !isValid ? "red" : "",
+            borderWidth: "2px"
           }}
         >
           <option value="">--Please choose an option--</option>
@@ -33,20 +27,9 @@ function ExpirationDateInput(props) {
           <option value="November">November</option>
           <option value="December">December</option>
         </select>
-      </div>
-      <div>
-        Year:{' '}
-        <input
-          type="number"
-          onChange={handleYear}
-          style={{
-            borderColor: !yearBool ? 'red' : 'green',
-            borderWidth: '2px'
-          }}
-        />
-      </div>
+      </label>
     </div>
   );
 }
 
-export default ExpirationDateInput;
+export default ExpirationMonthInput;
