@@ -93,9 +93,11 @@ export default class App extends React.Component {
 
 10. Create component `CvvInput` in a file named `CvvInput.js`.
 
-11. Create component `ExpirationDateInput` in a file named `ExpirationDateInput.js`.
+11. Create component `ExpirationYearInput` in a file named `ExpirationYearInput.js`.
 
-12. Create a state in `CreditCardForm` component inside constructor like this:
+12. Create component `ExpirationMonthInput` in a file named `ExpirationMonthInput.js`.
+
+13. Create a state in `CreditCardForm` component inside constructor like this:
 
 ```javascript
 this.state = {
@@ -106,22 +108,24 @@ this.state = {
   expirationYear: "",
   isCardNumberValid: false,
   isOwnerValid: false,
-  isCvvNumberValid: false,
+  isCvvValid: false,
   isExpirationMonthValid: false,
   isExpirationYearValid: false
 };
 ```
 
-13. Put a text input in `CardNumberInput` to get `cardNumber`. Save input value to `cardNumber` state of `CreditCardForm`. Set max length to 16. If card number is not 16 digits make the input border red to show error.
+14. Put a text input in `CardNumberInput` to get `cardNumber`. Save input value to `cardNumber` state of `CreditCardForm`. Set max length to 16. If card number is not 16 digits make the input border red to show error.
 
-14. Put an text input in `OwnerInput` to get `owner`. Save input value to `owner` state of `CreditCardForm`. If card number is empty make the input border red to show error.
+15. Put an text input in `OwnerInput` to get `owner`. Save input value to `owner` state of `CreditCardForm`. If card number is empty make the input border red to show error.
 
-15. Put an number input in `CvvInput` to get `cvv`. Save input value to `cvv` state of `CreditCardForm`. If card number is not 3 or 4 digits make the input border red to show error.
+16. Put an number input in `CvvInput` to get `cvv`. Save input value to `cvv` state of `CreditCardForm`. If card number is not 3 or 4 digits make the input border red to show error.
 
-16. Put a dropdown input in get month and a number input to get year in `ExpirationDateInput`. If month is not selected make the border red. if year is not 4 digits and less than 2019 make border green. Save dropdown input value to `expirationMonth` state and number input value to `expirationYear` of `CreditCardForm`.
+17. Put an number input in `ExpirationYearInput` to get `expirationYear`. Save input value to `expirationYear` state of `CreditCardForm`. If year is not 4 digits and less than 2019 make the input border red to show error.
 
-17. Put a Sumbit button at the end of `CreditCardForm`. If all data are valid make it enabled, else set it disabled. When user click on it alert card info.
+18. Put an number input in `ExpirationMonthInput` to get `expirationMonth`. Save input value to `expirationMonth` state of `CreditCardForm`. If month is not selected make the border red
 
-18. Add `CreditCardForm` to `App` component.
+19. Put a Sumbit button at the end of `CreditCardForm`. If all data are valid make it enabled, else set it disabled. When user click on it alert card info.
 
-19. Run `npm start` and Check result in the browser.
+20. Add `CreditCardForm` to `App` component.
+
+21. Run `npm start` and Check result in the browser.
