@@ -1,24 +1,21 @@
 import React from 'react';
 
 function CvvInput(props) {
-  const { handleCvv, cvv } = props;
-  let boolBg;
-  // console.log(cvv.length);
-  if (cvv.length === 4 || cvv.length === 3) {
-    boolBg = true;
-  }
+  const { handleCvv, isValid } = props;
 
   return (
     <div>
-      CvvInput:{' '}
-      <input
-        type="number"
-        onChange={handleCvv}
-        style={{
-          borderColor: !boolBg ? 'red' : null,
-          borderWidth: '2px'
-        }}
-      />
+      <label>
+        CvvInput:
+        <input
+          type="number"
+          onChange={handleCvv}
+          style={{
+            borderColor: !isValid ? 'red' : null,
+            borderWidth: '2px'
+          }}
+        />
+      </label>
     </div>
   );
 }

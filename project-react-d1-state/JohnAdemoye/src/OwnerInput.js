@@ -1,20 +1,21 @@
 import React from 'react';
 
 function OwnerInput(props) {
-  const { handleOwner, numberEmpty } = props;
-  //console.log('Empty: ', numberEmpty);
+  const { handleOwner, isValid } = props;
 
   return (
     <div>
-      OwnerInput:{' '}
-      <input
-        type="text"
-        onChange={handleOwner}
-        style={{
-          borderColor: numberEmpty === '' ? 'red' : '',
-          borderWidth: '2px'
-        }}
-      />
+      <label>
+        Owner :
+        <input
+          type="text"
+          onChange={handleOwner}
+          style={{
+            borderColor: !isValid ? 'red' : '',
+            borderWidth: '2px'
+          }}
+        />
+      </label>
     </div>
   );
 }
