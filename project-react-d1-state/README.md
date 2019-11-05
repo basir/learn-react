@@ -85,7 +85,7 @@ export default class App extends React.Component {
 }
 ```
 
-7. Create component `CreditCardForm` in a file named `Gallery.js`.
+7. Create component `CreditCardForm` in a file named `CreditCardForm.js`.
 
 8. Create component `CardNumberInput` in a file named `CardNumberInput.js`.
 
@@ -95,7 +95,7 @@ export default class App extends React.Component {
 
 11. Create component `ExpirationDateInput` in a file named `ExpirationDateInput.js`.
 
-12. Create an state in `CreditCardForm` component inside constructor like this:
+12. Create a state in `CreditCardForm` component inside constructor like this:
 
 ```javascript
 this.state = {
@@ -104,11 +104,15 @@ this.state = {
   cvv: "",
   expirationMonth: "",
   expirationYear: "",
-  isValid: false
+  isCardNumberValid: false,
+  isOwnerValid: false,
+  isCvvNumberValid: false,
+  isExpirationMonthValid: false,
+  isExpirationYearValid: false
 };
 ```
 
-13. Put an text input in `CardNumberInput` to get `cardNumber`. Save input value to `cardNumber` state of `CreditCardForm`. Set max length to 16. If card number is not 16 digits make the input border red to show error.
+13. Put a text input in `CardNumberInput` to get `cardNumber`. Save input value to `cardNumber` state of `CreditCardForm`. Set max length to 16. If card number is not 16 digits make the input border red to show error.
 
 14. Put an text input in `OwnerInput` to get `owner`. Save input value to `owner` state of `CreditCardForm`. If card number is empty make the input border red to show error.
 

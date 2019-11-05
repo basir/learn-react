@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 
-import Gallery from './Gallery';
+import CreditCardForm from "./CreditCardForm";
 
 export default class App extends React.Component {
   render() {
     return (
       <div>
-        <Gallery />
+        <CreditCardForm />
       </div>
     );
   }
