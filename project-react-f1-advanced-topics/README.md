@@ -13,7 +13,7 @@ Topics: Inline Styles
 ,Stateless Functional Components
 ,Adding Props
 
-## Project Title: ...
+## Project Title: Product Filter
 
 1. It was supposed that you are in VS Code, added this repository folder to workspace and opened terminal in `learn-react` folder.
 
@@ -76,4 +76,18 @@ export default class App extends React.Component {
 }
 ```
 
-7. ...
+7. Create `SearchFilter` component and put it into render method of `App` component.
+
+8. In the `SearchResult` component and put it into render method of `App` component.
+
+9. In the `SearchSummary` component and put it into render method of `App` component.
+
+10. Create arrays `items` in `App.js` that has 3 items includes `id`, `name`, `price`, `inStock`.
+
+11.  In `SearchFilter` create 4 input boxes include `query`, `minPrice`, `MaxPrice` and `inStock`
+
+12. In `SearchResult` show products based on the values that user enters in `SearchFilter`.
+
+13. In `SearchSummary` show number of founded products based on the values that user enters in `SearchFilter`. 
+
+14. Make `SearchResult` and `SearchSummary` as functional components.

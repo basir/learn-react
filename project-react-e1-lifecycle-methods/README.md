@@ -13,7 +13,7 @@ What's a Lifecycle Method?
 ,componentDidUpdate
 ,componentWillUnmount
 
-## Project Title: ...
+## Project Title: Weblog
 
 1. It was supposed that you are in VS Code, added this repository folder to workspace and opened terminal in `learn-react` folder.
 
@@ -76,4 +76,13 @@ export default class App extends React.Component {
 }
 ```
 
-7. ...
+7. Fetch list of posts from `https://jsonplaceholder.typicode.com/posts` and put it in `this.state.posts` of App Component state in `ComponentDidMount` event.
+
+8. Create a component named `Post` that show as post including title, body and user id. In the App component use this component to render  `this.state.posts` as vertical list.
+
+9. Create another component named `Summary` that shows number of posts in  `this.state.posts`. Use this component is `App.js` and pass `this.state.posts.length` as `num` prop to it.
+
+10. In the `Summary` component define `componentDidUpdate` to check `prevProps.num` and `this.props.num`. If  `prevProps.num` <= `this.props.num` then set green background effect for 1 second else set red background effect for 1 second.
+
+11. Add a button to `Summary` named `Refresh` and fetch again from  `https://jsonplaceholder.typicode.com/posts` when user click on it.
+
