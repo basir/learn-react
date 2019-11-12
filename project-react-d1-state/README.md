@@ -67,17 +67,17 @@ package-lock.json
 Your index.js would be like this:
 
 ```javascript
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById("root"));
 ```
 
 Your App.js would be like this:
 
 ```javascript
-import React from 'react';
+import React from "react";
 export default class App extends React.Component {
   render() {
     return <div>React App</div>;
@@ -108,7 +108,7 @@ this.state = {
   expirationYear: "",
   isCardNumberValid: false,
   isOwnerValid: false,
-  isCvvValid: false,
+  isCvvNumberValid: false,
   isExpirationMonthValid: false,
   isExpirationYearValid: false
 };
