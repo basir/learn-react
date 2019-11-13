@@ -1,0 +1,9 @@
+.red {
+      transition: background-color 1s ease;
+      background-color: red;
+}
+
+.green {
+      transition: background-color 1s ease;
+      background-color: lightgreen;
+}

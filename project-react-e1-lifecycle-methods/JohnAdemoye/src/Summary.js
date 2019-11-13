@@ -1,4 +1,6 @@
-import React, { Fragment } from 'react';
+import React, { Fragment } from "react";
+
+import "./App.css";
 
 class Summary extends React.Component {
   constructor(props) {
@@ -10,31 +12,29 @@ class Summary extends React.Component {
   }
 
   componentWillReceiveProps(prevProps) {
-    // console.log(prevProps.num);
-    // console.log(this.props.num);
-
-    //   if (prevProps.num <= this.props.num) {
-    //     setTimeout(this.setState({ bgColor: true }), 1000);
-    //   }
-
-    prevProps.num <= this.props.num
-      ? setTimeout(this.setState({ bgColor: true }), 1000)
-      : setTimeout(this.setState({ bgColor: false }), 1000);
+    if (prevProps.num >= this.props.num) {
+      this.setState({ bgColor: false });
+    } else this.setState({ bgColor: false });
   }
+
+  // Throw an error
+  // componentDidUpdate(prevProps) {
+  //   if (prevProps.num <= this.props.num) {
+  //     this.setState({ bgColor: true });
+  //   } else {
+  //     this.setState({ bgColor: false });
+  //   }
+  // }
 
   render() {
     //console.log(this.props);
 
     return (
       <Fragment>
-        <h1
-          style={{
-            backgroundColor: `${this.state.bgColor ? 'red' : 'lightgreen'}`
-          }}
-        >
+        <h1 className={`${this.state.bgColor ? "red" : "green"}`}>
           Number of posts: {this.props.num}
         </h1>
-        <button onClick={this.props.refreshPosts}>Refresh</button>
+        <button onClick={this.props.fetchData}>Refresh</button>
       </Fragment>
     );
   }
