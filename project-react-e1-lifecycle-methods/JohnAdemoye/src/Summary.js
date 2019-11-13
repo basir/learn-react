@@ -11,13 +11,7 @@ class Summary extends React.Component {
     };
   }
 
-  componentWillReceiveProps(prevProps) {
-    if (prevProps.num >= this.props.num) {
-      this.setState({ bgColor: false });
-    } else this.setState({ bgColor: false });
-  }
-
-  // Throw an error
+  // THROWS AN ERROR - MY IMPLEMENTATION
   // componentDidUpdate(prevProps) {
   //   if (prevProps.num <= this.props.num) {
   //     this.setState({ bgColor: true });
@@ -25,6 +19,13 @@ class Summary extends React.Component {
   //     this.setState({ bgColor: false });
   //   }
   // }
+
+  componentDidUpdate(prevProps) {
+    if (prevProps.num !== this.props.num) {
+      if (prevProps.num >= this.props.num) this.setState({ bgColor: true });
+      else this.setState({ bgColor: false });
+    }
+  }
 
   render() {
     //console.log(this.props);
