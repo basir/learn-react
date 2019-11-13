@@ -108,7 +108,7 @@ this.state = {
   expirationYear: "",
   isCardNumberValid: false,
   isOwnerValid: false,
-  isCvvValid: false,
+  isCvvNumberValid: false,
   isExpirationMonthValid: false,
   isExpirationYearValid: false
 };

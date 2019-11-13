@@ -6,15 +6,15 @@ function OwnerInput(props) {
   return (
     <div>
       <label>
-      Owner : 
-      <input
-        type="text"
-        onChange={handleOwner}
-        style={{
-          borderColor: !isValid ?   'red' : '',
-          borderWidth: '2px'
-        }}
-      />
+        Owner :
+        <input
+          type="text"
+          onChange={handleOwner}
+          style={{
+            borderColor: !isValid ? 'red' : '',
+            borderWidth: '2px'
+          }}
+        />
       </label>
     </div>
   );

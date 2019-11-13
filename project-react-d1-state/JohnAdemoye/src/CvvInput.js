@@ -6,15 +6,15 @@ function CvvInput(props) {
   return (
     <div>
       <label>
-      CvvInput: 
-      <input
-        type="number"
-        onChange={handleCvv}
-        style={{
-          borderColor: !isValid ? 'red' : null,
-          borderWidth: '2px'
-        }}
-      />
+        CvvInput:
+        <input
+          type="number"
+          onChange={handleCvv}
+          style={{
+            borderColor: !isValid ? 'red' : null,
+            borderWidth: '2px'
+          }}
+        />
       </label>
     </div>
   );

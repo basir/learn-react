@@ -58,17 +58,17 @@ Your index.html would be like this:
 Your index.js would be like this:
 
 ```javascript
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./App";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById('root'));
 ```
 
 Your App.js would be like this:
 
 ```javascript
-import React from "react";
+import React from 'react';
 export default class App extends React.Component {
   render() {
     return <div>React App</div>;
@@ -82,12 +82,12 @@ export default class App extends React.Component {
 
 9. In the `SearchSummary` component and put it into render method of `App` component.
 
-10. Create arrays `items` in `App.js` that has 3 items includes `id`, `name`, `price`, `inStock`.
+10. Create arrays `items` in `App.js` that has 4 items includes `id`, `name`, `price`, `inStock`.
 
-11.  In `SearchFilter` create 4 input boxes include `query`, `minPrice`, `MaxPrice` and `inStock`
+11. In `SearchFilter` create 4 input boxes include `query`, `minPrice`, `MaxPrice` and `inStock`
 
 12. In `SearchResult` show products based on the values that user enters in `SearchFilter`.
 
-13. In `SearchSummary` show number of founded products based on the values that user enters in `SearchFilter`. 
+13. In `SearchSummary` show number of founded products based on the values that user enters in `SearchFilter`.
 
 14. Make `SearchResult` and `SearchSummary` as functional components.
