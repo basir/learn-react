@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        #root {
+          max-width: 500px;
+          margin: 0 auto;
+        }
+        .header {
+          border: 1px solid gray;
+          padding: 10px;
+        }
+        .content {
+          border: 1px solid gray;
+          padding: 10px;
+        }
+        .footer {
+          border: 1px solid gray;
+          padding: 10px;
+        }
+        table {
+          width: 100%;
+        }
+      </style>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      // your code here
+      const accountName = 'Huynh Nguyen Ha Nam';
+      const typesOfCharges = [
+        { name: "Monthly Service", fee: 24 },
+        { name: "Tax", fee: 2.4 },
+        { name: `CBT Service`, fee: 1.2 }
+        ];
+        const totalFee = typesOfCharges.reduce((a,b) => a + b.fee, 0).toFixed(2);
+      const stampUrl = 'https://image.freepik.com/free-vector/paid-stamp_1017-8234.jpg';
+      const telephoneBill = (
+          <div>
+            <h1>My Telephone Bill</h1>
+            <div className='header'>
+                <p>52 Thuan Phuoc, Hai Chau, Tp. Da Nang</p>
+                <p>
+                Bill Date:  {new Date().toISOString().slice(0, 10)} <br/>
+                Account Name: {accountName}
+                </p>
+            </div>
+            <div className='content'>
+                <table border='1px solid'>
+                    <thead>
+                        <tr>
+                            <td>name</td>
+                            <td>fee</td>
+                        </tr>
+                    </thead>
+                    <tbody>       
+                        {typesOfCharges.map((charge) => (
+                            <tr key={charge.name}>
+                                <td>{charge.name}</td>
+                                <td>{charge.fee}</td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            </div>
+            <div className='footer'>
+                {
+                    totalFee > 0 ? `Total: ${totalFee}` : `Your bill is free this month`
+                }
+                <img src={stampUrl} width={80} height={80} alt="Image" onClick={() => alert('Yes. It is paid.')} />
+            </div>
+          </div>
+      )
+      ReactDOM.render(telephoneBill, document.getElementById('root'))
+    </script>
+  </body>
+</html>
