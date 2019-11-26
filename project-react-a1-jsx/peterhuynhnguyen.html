@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      // your code here
+      const visitCard = (
+          <div>
+            <h1> Your-Name Visit Card </h1>
+            <p>My name's Huynh Nguyen Ha Nam. I'm 24 years old</p>
+            <a target='_blank' href="https://twitter.com/devcrazies">My Twitter</a>
+            <hr/>
+            <img width={150} src="./stevejobs.jpg" alt="steve jobs" />
+          </div>
+          );
+      ReactDOM.render(visitCard, document.getElementById('root'));
+    </script>
+  </body>
+</html>
