@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+
+    <div id="root"></div>
+    <script type="text/babel">
+        const visitCard = (
+            <div>
+                <h1>Rob Visit Card</h1>
+                <p>I am an old dog trying to learn new tricks.</p>
+                <a href="http://www.twitter.com/bobbyrutz" target="_blank">This is my Twitter account!</a>
+                <img src="https://i2.wp.com/www.dewieirig.cymru/wp-content/uploads/2016/03/Twitter_T_logo.png?resize=150%2C150&ssl=1" alt="Twitter Logo" />
+            </div>
+        );
+        ReactDOM.render(visitCard, document.getElementById("root"));
+    </script>
+</body>
+
+</html>
